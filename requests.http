@@ -1,0 +1,36 @@
+### GET todos
+GET http://localhost:8080/todos
+Accept: application/json
+
+###
+
+### GET todo
+GET http://localhost:8080/todos/1
+Accept: application/json
+
+###
+
+### POST new todo
+POST http://localhost:8080/todos
+Content-Type: application/json
+
+{
+    "task": "Learn Rust",
+    "completed": false
+}
+
+###
+
+### PUT update todo
+PUT http://localhost:8080/todos/f7754b47-cb33-42ac-ab6d-26a5498b4f7d
+Content-Type: application/json
+
+{
+    "task": "Learn The Composable Architecture.",
+    "completed": true
+}
+
+###
+
+### DELETE a todo
+DELETE http://localhost:8080/todos/4ac241fe-dff6-4264-98d2-ab97f1a9a300
